@@ -1,0 +1,8 @@
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.csproj.AssemblyReference.cache
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.GeneratedMSBuildEditorConfig.editorconfig
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.AssemblyInfoInputs.cache
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.AssemblyInfo.cs
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.csproj.CoreCompileInputs.cache
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.MvcApplicationPartsAssemblyInfo.cache
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.RazorAssemblyInfo.cache
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.RazorAssemblyInfo.cs

@@ -15,7 +15,47 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        ViewBag.Partidos = BD.ListarPartidos();
+        return View("Index");
+    }
+
+    public IActionResult VerDetallePartido(int idPartido){
+        ViewBag.Partido = BD.VerInfoPartido(idPartido);
+        ViewBag.Candidatos = BD.ListarCandidatos(idPartido);
+        return View("VerDetallePartido");
+    }
+
+    public IActionResult VerDetalleCandidato(int idCandidato){
+        ViewBag.Candidato = BD.VerInfoCandidato(idCandidato);
+        return View("VerDetalleCandidato");
+    }
+
+    public IActionResult AgregarCandidato(int idPartido){
+        ViewBag.Partido = BD.VerInfoPartido(idPartido);
+        return View("AgregarCandidato");
+    }
+
+    public IActionResult GuardarCandidato(Candidatos can){
+        ViewBag.Partido = BD.VerInfoPartido(can.idPartido);
+        ViewBag.Candidatos = BD.ListarCandidatos(can.idPartido);
+        //Candidatos can = new Candidatos{idC,idP,ape,nom,nac,fot,pos};
+        AgregarCandidato(can);
+        return View("AgregarCandidato");
+    }
+
+    public IActionResult EliminarCandidato(int idCandidato, int idPartido){
+        ViewBag.Partido = BD.VerInfoPartido(idPartido);
+        ViewBag.Candidatos = BD.ListarCandidatos(idPartido);
+        EliminarCandidato(idCandidato);
+        return View("VerDetallePartido");
+    }
+
+    public IActionResult Elecciones(){
+        return View("Elecciones");
+    }
+
+    public IActionResult Creditos(){
+        return View("Creditos");
     }
 
     public IActionResult Privacy()

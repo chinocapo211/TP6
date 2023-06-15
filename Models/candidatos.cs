@@ -1,7 +1,7 @@
 public class Candidatos
 {
 int idCandidato {get; set;}
-int idPartido {get; set;}
+public int idPartido {get; set;}
 string apellido {get; set;}
 string nombre {get; set;}
 DateTime fechaNacimiento {get; set;}
