@@ -3,6 +3,13 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">¡Bienvenidos!</h1>
+    <p>Binvenidos a la pagina de Elecciones 2023</p>
+    @foreach (Partidos par in ViewBag.infoPartido)
+    {
+        <div class="card">
+            <a href='@Url.Action("VerDetallePartido")'><img src="par.foto" alt="Logo Partido"></a>
+            <p>@par.nombre</p>
+        </div>
+    }
 </div>

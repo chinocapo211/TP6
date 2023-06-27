@@ -1,10 +1,10 @@
 public class Candidatos
 {
-int idCandidato {get; set;}
-int idPartido {get; set;}
-string apellido {get; set;}
-string nombre {get; set;}
-DateTime fechaNacimiento {get; set;}
-string foto {get; set;}
-string postulacion {get; set;}
+public int idCandidato {get; set;}
+public int idPartido {get; set;}
+public string apellido {get; set;}
+public string nombre {get; set;}
+public DateTime fechaNacimiento {get; set;}
+public string foto {get; set;}
+public string postulacion {get; set;}
 }

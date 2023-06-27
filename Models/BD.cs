@@ -17,10 +17,36 @@ public static class BD
             db.Execute(sql, new {pidCandidato = idCandidato});
         }
     }
-    static public void verInfoPartido(int idPartido){
+    static public Partidos verInfoPartido(int idPartido){
         string sql = "SELECT * FROM PARTIDO WHERE idPartido = @idPartido";
+        Partidos partido;
         using(SqlConnection db = new SqlConnection(_connectionString)){
-            Partidos partido = db.QueryFirstOrDefault<Partidos>(sql, new{idPartido = idPartido});
+            partido = db.QueryFirstOrDefault<Partidos>(sql, new{idPartido = idPartido});
         } 
+        return partido;
+    }
+    static public Candidatos verInfoCandidato(int idCandidato){
+        string sql = "SELECT * FROM PARTIDO WHERE idCandidato = @idCandidato";
+        Candidatos candidato;
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+            candidato = db.QueryFirstOrDefault<Candidatos>(sql, new{idCandidato = idCandidato});
+        }
+        return candidato;
+    }
+    static public List<Partidos> listarPartidos(){
+        string sql = "SELECT * FROM Partidos";
+        List<Partidos> listaP = new List<Partidos>{}; 
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+           listaP = db.Query<Partidos>(sql).ToList();
+        }
+        return listaP;
+    }
+    static public List<Candidatos> listarCandidatos(int idPartido){
+        string sql = "SELECT * FROM Candidatos WHERE idPartido = @idPartido";
+        List<Candidatos> listaC = new List<Candidatos>{}; 
+        using(SqlConnection db = new SqlConnection(_connectionString)){
+           listaC = db.Query<Candidatos>(sql, new{idPartido = idPartido}).ToList();
+        }
+        return listaC;
     }
 }
