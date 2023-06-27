@@ -4,7 +4,7 @@ using Dapper;
 public static class BD
 {   
     private static string _connectionString = @"Server=localhost;DataBase=Elecciones2023;Trusted_Connection=True;";
-    static public void agregarCandidato(Candidatos can){
+    static public void AgregarCandidato(Candidatos can){
         string sql = "INSERT INTO Candidatos @candidato";
         using(SqlConnection db = new SqlConnection(_connectionString))
         {

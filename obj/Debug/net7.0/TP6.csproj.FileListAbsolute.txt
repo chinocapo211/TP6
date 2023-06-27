@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Z:\Tecnologia\4to\programacion\TP6\bin\Debug\net7.0\appsettings.Development.json
 Z:\Tecnologia\4to\programacion\TP6\bin\Debug\net7.0\appsettings.json
 Z:\Tecnologia\4to\programacion\TP6\bin\Debug\net7.0\TP6.staticwebassets.runtime.json
@@ -37,3 +38,13 @@ Z:\Tecnologia\4to\programacion\TP6\obj\Debug\net7.0\refint\TP6.dll
 Z:\Tecnologia\4to\programacion\TP6\obj\Debug\net7.0\TP6.pdb
 Z:\Tecnologia\4to\programacion\TP6\obj\Debug\net7.0\TP6.genruntimeconfig.cache
 Z:\Tecnologia\4to\programacion\TP6\obj\Debug\net7.0\ref\TP6.dll
+=======
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.csproj.AssemblyReference.cache
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.GeneratedMSBuildEditorConfig.editorconfig
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.AssemblyInfoInputs.cache
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.AssemblyInfo.cs
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.csproj.CoreCompileInputs.cache
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.MvcApplicationPartsAssemblyInfo.cache
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.RazorAssemblyInfo.cache
+Z:\INFO 4°\Programacion\TP6\obj\Debug\net7.0\TP6.RazorAssemblyInfo.cs
+>>>>>>> 80f32b3921726b98393d387d9d1d988acb3ded82

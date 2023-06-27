@@ -37,7 +37,7 @@ public class HomeController : Controller
      [HttpPost]
     public IActionResult GuardarCandidato(Candidatos can)
     {
-        BD.agregarCandidato(can);
+        BD.AgregarCandidato(can);
         return RedirectToAction("VerDetallePartido",new {idPartido= can.idPartido});
     }
     public IActionResult EliminarCandidato(int idCandidato, int idPartido)
