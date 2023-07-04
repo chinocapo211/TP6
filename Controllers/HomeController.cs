@@ -18,38 +18,39 @@ public class HomeController : Controller
         ViewBag.listaPartidos = BD.listarPartidos();
         return View();
     }
-    public IActionResult VerDetallePartido(int idPartido)
+    public IActionResult VerDetallePartido(int IdPartido)
     {
-        ViewBag.infoPartido = BD.verInfoPartido(idPartido);
-        ViewBag.listarCandidatos = BD.listarCandidatos(idPartido);
+        ViewBag.infoPartido = BD.verInfoPartido(IdPartido);
+        ViewBag.listarCandidatos = BD.listarCandidatos(IdPartido);
         return View();
     }
-    public IActionResult VerDetalleCandidato(int idCandidato)
+    public IActionResult VerDetalleCandidato(int IdCandidato)
     {
-        ViewBag.infoCandidato = BD.verInfoCandidato(idCandidato);
+        ViewBag.infoCandidato = BD.verInfoCandidato(IdCandidato);
         return View();
     }
-    public IActionResult AgregarCandidato(int idPartido)
+    public IActionResult AgregarCandidato(int IdPartido)
     {
-        ViewBag.idPartido = idPartido;
+        ViewBag.idPartido = IdPartido;
+        ViewBag.infoPartido = BD.verInfoPartido(IdPartido);
         return View();
     }
      [HttpPost]
     public IActionResult GuardarCandidato(Candidatos can)
     {
         BD.AgregarCandidato(can);
-        return RedirectToAction("VerDetallePartido",new {idPartido= can.idPartido});
+        return RedirectToAction("VerDetallePartido",new {IdPartido= can.IdPartido});
     }
-    public IActionResult EliminarCandidato(int idCandidato, int idPartido)
+    public IActionResult EliminarCandidato(int IdCandidato, int IdPartido)
     {
-        BD.EliminarCantidato(idCandidato);
-        return RedirectToAction("VerDetallePartido",new {idPartido= idPartido});
+        BD.EliminarCantidato(IdCandidato);
+        return RedirectToAction("VerDetallePartido",new {IdPartido= IdPartido});
     }
-    public IActionResult elecciones()
+    public IActionResult Elecciones()
     {
         return View();
     }
-    public IActionResult creditos()
+    public IActionResult Creditos()
     {
         return View();
     }

@@ -20,3 +20,21 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+img{
+  width:80%
+}
+
+.candidato{
+  display: flex;
+  justify-content: space-between;
+}
+.nombre{
+  display: flex;
+}
+.nombre p{
+  padding-left: 10px;
+}
+.foto{
+  max-width: 500px;
+}

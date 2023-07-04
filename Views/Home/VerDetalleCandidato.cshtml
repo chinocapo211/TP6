@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "@ViewBag.infoCandidato.Nombre @ViewBag.infoCandidato.Apellido";
+}
+<div class="text-center">
+    <h1 class="display-4"></h1>
+    <img src="/img/Candidatos/@ViewBag.infoCandidato.Foto" alt="Candidato">
+    <p>Nombre: @ViewBag.infoCandidato.Nombre</p>
+    <p>Apellido: @ViewBag.infoCandidato.Apellido</p>
+    <p>Fecha de nacimiento: @ViewBag.infoCandidato.FechaNacimiento</p>
+    <p>Postulación: @ViewBag.infoCandidato.Postulacion</p>
+    <a href='@Url.Action("EliminarCandidato",new{IdCandidato = @ViewBag.infoCandidato.IdCandidato,IdPartido=@ViewBag.infoCandidato.IdPartido})'><button>Eliminar Candidato</button></a>
+</div>

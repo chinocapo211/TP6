@@ -5,11 +5,11 @@
 <div class="text-center">
     <h1 class="display-4">¡Bienvenidos!</h1>
     <p>Binvenidos a la pagina de Elecciones 2023</p>
-    @foreach (Partidos par in ViewBag.infoPartido)
+    @foreach (Partidos par in ViewBag.listaPartidos)
     {
         <div class="card">
-            <a href='@Url.Action("VerDetallePartido")'><img src="par.foto" alt="Logo Partido"></a>
-            <p>@par.nombre</p>
+            <a href='@Url.Action("VerDetallePartido", new{IdPartido=par.IdPartido})'><img src="/img/Partidos/@par.Logo" alt="Logo Partido"></a>
+            <p>@par.Nombre</p>
         </div>
     }
 </div>

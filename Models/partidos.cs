@@ -1,10 +1,10 @@
 public class Partidos
 {
-    public int idPartido{get; set;}
-    public string nombre{get; set;}
-    public string logo {get; set;}
-    public string sitioWeb {get;set;}
-    public DateTime fechaFundacion {get; set;}
-    public int cantDiputados{get; set;}
-    public int cantSenadores {get; set;}
+    public int IdPartido{get; set;}
+    public string Nombre{get; set;}
+    public string Logo {get; set;}
+    public string SitioWeb {get;set;}
+    public DateTime FechaFundacion {get; set;}
+    public int CantDiputados{get; set;}
+    public int CantSenadores {get; set;}
 }
